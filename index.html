@@ -9,6 +9,9 @@
     <meta name="description" content="고불소치약의 효과, 올바른 사용법, 부작용, 추천 제품까지. 당신의 건강한 치아를 위한 필수 정보를 확인하세요." />
     <meta name="keywords" content="고불소치약, 충치 예방, 불소 치약, 치아 관리, 구강 건강" />
     
+    <!-- ADDED: Favicon to prevent 404 errors -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="고불소치약 정보 허브" />
@@ -40,7 +43,7 @@
 </head>
   <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
     <div id="root"></div>
-    <!-- CHANGED: Script type to 'text/babel' and added presets for transpilation -->
-    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+    <!-- CHANGED: Added data-type="module" to ensure the transpiled script runs as a module -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
