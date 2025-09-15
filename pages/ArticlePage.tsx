@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { getArticleBySlug } from '../services/articleService';
-import { Article } from '../types';
-import useSEO from '../hooks/useSEO';
+import { getArticleBySlug } from '../services/articleService.ts';
+import { Article } from '../types.ts';
+import useSEO from '../hooks/useSEO.ts';
 
 const ArticlePage: React.FC = () => {
   const [article, setArticle] = useState<Article | null>(null);

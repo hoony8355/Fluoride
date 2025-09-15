@@ -1,4 +1,5 @@
-import { Article } from '../types';
+
+import { Article } from '../types.ts';
 
 const articles: Article[] = [
   {

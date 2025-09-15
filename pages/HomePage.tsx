@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
-import { getArticles } from '../services/articleService';
-import { Article } from '../types';
-import ArticleCard from '../components/ArticleCard';
-import useSEO from '../hooks/useSEO';
+import { getArticles } from '../services/articleService.ts';
+import { Article } from '../types.ts';
+import ArticleCard from '../components/ArticleCard.tsx';
+import useSEO from '../hooks/useSEO.ts';
 
 const HomePage: React.FC = () => {
   const [articles, setArticles] = useState<Article[]>([]);

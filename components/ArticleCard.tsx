@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Article } from '../types';
+import { Article } from '../types.ts';
 
 interface ArticleCardProps {
   article: Article;
