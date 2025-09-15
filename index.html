@@ -25,25 +25,9 @@
     <!-- <meta property="twitter:image" content="URL_TO_YOUR_IMAGE" /> -->
 
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    
-    <!-- ADDED: Babel Standalone for in-browser TSX/JSX transpilation -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
-    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
-  }
-}
-</script>
 </head>
   <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200">
     <div id="root"></div>
-    <!-- CHANGED: Added data-type="module" to ensure the transpiled script runs as a module -->
-    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
